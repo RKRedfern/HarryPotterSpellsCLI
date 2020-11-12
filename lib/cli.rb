@@ -1,4 +1,4 @@
-require 'pry'
+
 class CLI
     def initialize
         start
@@ -53,7 +53,7 @@ class CLI
 
     def second_menu
         response = $prompt.select("Would you like to see more?", ["Yes", "No"])
-        if response = "Yes"
+        if response == "Yes"
             display_types_of_spells
         else 
             puts "Well then I see no reason that you shouldn't get back to your dormitory immediately! A pleasant evening to you!"
