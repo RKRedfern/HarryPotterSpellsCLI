@@ -55,7 +55,6 @@ class CLI
         clear_screen
         
         spells = Spell.retrieve_by_type(chosen_type)
-        
         chosen_spell_name = $prompt.select("\nAh certainly, I'd be happy to tell you more about these!", spells)
 
         clear_screen
