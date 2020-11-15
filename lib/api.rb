@@ -2,7 +2,7 @@ class API
 
 
     def self.gather_spells
-        url = "https://donmallory.tech/rkSpells.json"
+        url = "https://donmallory.tech/rkSpells.json?=1"
         uri = URI(url)
         spells = Net::HTTP.get(uri)
         spells_array = JSON.parse(spells)
